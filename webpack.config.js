@@ -1,20 +1,21 @@
-const webpack = require('webpack')
 const { resolve } = require('path')
-const UnglifyJS = webpack.optimize.UglifyJsPlugin
 
 module.exports = {
   context: __dirname,
   entry: './src/index.js',
+  externals: {
+    'styled-components': {
+      commonjs: 'styled-components',
+      commonjs2: 'styled-components',
+      amd: 'styled-components'
+    }
+  },
   output: {
     path: resolve(__dirname, './dist'),
-    filename: 'bundle.min.js'
+    filename: 'bundle.min.js',
+    library: '',
+    libraryTarget: 'commonjs'
   },
-  plugins: [
-    new UnglifyJS({
-      mangle: false,
-      sourceMaps: false
-    })
-  ],
   module: {
     rules: [
       // Linter

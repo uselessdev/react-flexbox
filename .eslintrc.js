@@ -4,6 +4,6 @@ module.exports = {
     jest: true
   },
   rules: {
-    'jsx-quotes': [2, 'preder-double']
+    'jsx-quotes': [2, 'prefer-double']
   }
 }
