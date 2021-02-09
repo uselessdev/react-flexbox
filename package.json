@@ -23,7 +23,7 @@
     "enzyme-to-json": "^3.2.2",
     "eslint": "^7.19.0",
     "eslint-config-standard": "^16.0.2",
-    "eslint-config-standard-react": "^9.0.0",
+    "eslint-config-standard-react": "^11.0.1",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^11.1.0",
